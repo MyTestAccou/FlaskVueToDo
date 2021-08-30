@@ -35,7 +35,7 @@ def index():
 
     return render_template('index.html')
 
-@app.route('create', methods=['POST'])
+@app.route('/create', methods=['POST'])
 def create_task():
     user_input = request.get_json()
 
